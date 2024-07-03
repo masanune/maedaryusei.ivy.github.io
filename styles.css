@@ -1,0 +1,77 @@
+/* リセットCSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    background-image: url('img/img1.png'); /* 背景画像を設定 */
+    background-size: cover; /* 背景画像をカバー */
+    background-attachment: fixed; /* スクロールしても背景画像が追従する */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: rgba(235, 202, 151, 0); /* 背景に半透明の色を重ねる */
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    padding-left: 20px;
+    text-align: center; /* テキストを中央揃えにする */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+main {
+    padding: 20px;
+    flex: 1; /* メインコンテンツがフレックスコンテナの残りのスペースを占める */
+}
+
+section {
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border: 2px solid #fff; /* 白い線で囲む */
+    border-radius: 10px;
+}
+
+footer {
+    background: rgba(235, 202, 151, 0); /* 背景に半透明の色を重ねる */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.highlight img {
+    width: 500px;
+    height: auto;
+    max-height: 200px; /* 必要に応じて最大高さを調整 */
+    border-radius: 10px; /* セクションの角の丸みと一致させるため */
+    display: block; /* 中央揃えにするためにブロック要素にする */
+    margin: 0 auto; /* 左右のマージンを自動にして中央揃えにする */
+}
